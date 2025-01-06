@@ -16,7 +16,7 @@ const projects = [
     title: "DeliveryMan",
     description: "O cliente pode publicar entregas e os entregadores pode coletar e fazer a entrega para o local desejado.",
     image: ImgEntregador,
-    demoLink: "https://vemparaodfood.vercel.app/loginClient",
+    demoLink: "https://sistema-delivery-tau.vercel.app",
     repoLink: "https://github.com/Rauan19/Sistema-Delivery",
     technologies: ["React", "Node.js", "PostgreSQL", "Multer"]
   },
@@ -27,8 +27,40 @@ const projects = [
     demoLink: "https://doacoes-2024.vercel.app/",
     repoLink: "https://github.com/Rauan19/doacoes",
     technologies: ["React", "Node.js", "Mongodb"]
+  }, {
+    title: "Consultor de ip",
+    description: "Faz consulta sobre localização do ip",
+    image: imgConsulip,
+    demoLink: "https://consultador-de-ip.vercel.app/",
+    repoLink: "https://github.com/Rauan19/Consultar-ip",
+    technologies: ["Vuejs", "Node.js", "Mongodb"]
+  },
+  {
+    title: "Conversor de moedas",
+    description: "COnverte em valores de moedas diferentes",
+    image: imgMoedas,
+    demoLink: "https://conversor-de-moedas-fawn.vercel.app/",
+    repoLink: "https://github.com/Rauan19/Conversor-de-Moedas",
+    technologies: ["Vuejs", "Node.js", "Mongodb"]
+  },
+  {
+    title: "ZC-net provedor",
+    description: "Consultar serviços e pagamento boleto ",
+    image:imgzcnet ,
+    demoLink: "https://zc-net.netlify.app/",
+    repoLink: "https://github.com/Rauan19/leandingpage",
+    technologies: ["Html", "css", "JavaScript"]
+  },
+  {
+    title: "Busque informações sobre paises",
+    description: " ",
+    image: ImgPais,
+    demoLink: "https://informa-oes-de-paises-zrcz.vercel.app/",
+    repoLink: "https://github.com/Rauan19/Informa-oes-de-paises",
+    technologies: ["Vue.js", "TypeScript"]
   }
 ];
+
 
 const ProjectCard = ({ project }) => (
   <div className="bg-white rounded-lg shadow-lg overflow-hidden">

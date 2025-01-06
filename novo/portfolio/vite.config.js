@@ -14,11 +14,11 @@ export default defineConfig({
     alias: [
       {
         find: "@",
-        replacement: fileURLToPath(new URL("./src", import.meta.url)),
+        replacement: fileURLToPath(new URL("./src", import.meta.url)), // Usando import.meta.url para obter o diretório
       },
       {
         find: "lib",
-        replacement: resolve(__dirname, "lib"),
+        replacement: resolve(fileURLToPath(new URL(".", import.meta.url)), "lib"), // Usando import.meta.url aqui também
       },
     ],
   },
